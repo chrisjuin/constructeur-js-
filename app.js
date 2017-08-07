@@ -19,17 +19,24 @@ p1.affiche();
 function Classe(){
 	this.curIdEleve = 1; 
 	this.eleves = [];
+
+	//Methode d'ajout d'eleves
 	this.addEleve = function(prenom , nom , age , sexe){
 		var eleve = new Eleve(this.curIdEleve , prenom , nom , sexe , age); 
 		this.eleves.push(eleve); 
 		this.curIdEleve ++;
 	} 
+
+	//Methode de comptage d'eleves
+	this.compteEleve = function(A , M , F){
+		if () {}
+	}
 	
 }; 
 
 var classe1 = new Classe();
-classe1.addEleve("Chris" , "Juin" , 21 , "Masculin"); 
-classe1.addEleve("Leo" , "Subias" , 20 , "Masculin"); 
+classe1.addEleve("Chris" , "Juin" , 21 , "M"); 
+classe1.addEleve("Leo" , "Subias" , 20 , "M"); 
 
 
 // Exercice avec les objets: Gestion d'une classe d'école
